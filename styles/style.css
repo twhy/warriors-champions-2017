@@ -14,10 +14,10 @@ body {
   width: 100%;
   height: 100%;
   position: fixed;
-  filter: blur(3px);
+  /*filter: blur(3px);
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url('../images/champions.jpg');
+  background-image: url('../images/champions.jpg');*/
 }
 
 @keyframes spin {
@@ -30,8 +30,8 @@ body {
 }
 
 .warriors {
-  width: 220px;
-  height: 220px;
+  width: 200px;
+  height: 200px;
   cursor: pointer;
   position: relative;
   transform-style: preserve-3d;
