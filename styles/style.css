@@ -56,10 +56,10 @@ main {
 
 @keyframes spin {
   from {
-    transform: rotateY(20deg);
+    transform: rotateY(0);
   }
   to {
-    transform: rotateY(-340deg);
+    transform: rotateY(-360deg);
   }
 }
 
