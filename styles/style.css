@@ -5,7 +5,6 @@ html, body {
 body {
   margin: 0;
   perspective: 1000px;
-  -webkit-text-size-adjust: none;
 }
 
 main {
@@ -18,14 +17,19 @@ main {
 .background {
   width: 100%;
   height: 100%;
-  position: fixed;  
-  background-size: cover;
+  position: fixed;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
   background-image: url('../images/championship-2017-bg-video-poster.jpg');
 }
 
-.background > video {
-  object-fit: cover;
+.video {
+  object-fit: fill;
+}
+
+/* https://stackoverflow.com/questions/16348489/is-there-a-css-hack-for-safari-only-not-chrome */
+_::-webkit-full-page-media, _:future, :root .video {
+  height: 100%;
 }
 
 .logo {
