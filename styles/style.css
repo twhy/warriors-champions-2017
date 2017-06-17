@@ -1,0 +1,109 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  perspective: 1000px;
+  justify-content: center;
+}
+
+.background {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  filter: blur(3px);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url('../images/champions.jpg');
+}
+
+@keyframes spin {
+  from {
+    transform: rotateY(15deg);
+  }
+  to {
+    transform: rotateY(-345deg);
+  }
+}
+
+.warriors {
+  width: 220px;
+  height: 220px;
+  cursor: pointer;
+  position: relative;
+  transform-style: preserve-3d;
+}
+
+.warriors.animate {
+  animation: spin 60s linear infinite;
+}
+
+.warriors.animate:hover {
+  animation-play-state: paused;
+}
+
+.warrior {
+  top: 0;
+  left: 0;
+  width: inherit;
+  height: inherit;
+  position: absolute;
+  border-radius: 4px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  transform: rotateY(0) rotateX(0);
+}
+
+.warrior.sc {
+  background-image: url(../images/sc.jpeg);
+}
+
+.warrior.kd {
+  background-image: url(../images/kd.jpeg);
+}
+
+.warrior.ai {
+  background-image: url(../images/ai.jpeg);
+}
+
+.warrior.lv {
+  background-image: url(../images/lv.jpeg);
+}
+
+.warrior.dw {
+  background-image: url(../images/dw.jpeg);
+}
+
+.warrior.klay {
+  background-image: url(../images/klay.jpeg);
+}
+
+.warrior.zaza {
+  background-image: url(../images/zaza.jpeg);
+}
+
+.warrior.green {
+  background-image: url(../images/green.jpeg);
+}
+
+.warrior.clark {
+  background-image: url(../images/clark.jpeg);
+}
+
+.warrior.mcgee {
+  background-image: url(../images/mcgee.jpeg);
+}
+
+.logo {
+  width: 280px;
+  height: 280px;
+  opacity: .8;
+  z-index: 9999;
+  position: fixed;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url('../images/logo.svg');
+}
