@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
   <link rel="stylesheet" href="styles/style.css">
   <title>Warriors Champions 2017</title>
 </head>
+
 <body>
   <div class="background">
     <video loop autoplay preload="auto" poster="images/championship-2017-bg-video-poster.jpg">
@@ -17,29 +19,32 @@
     </video>
   </div>
   <div class="logo"></div>
-  <div class="warriors">
-    <div class="warrior sc"></div>
-    <div class="warrior kd"></div>
-    <div class="warrior klay"></div>
-    <div class="warrior green"></div>
-    <div class="warrior zaza"></div>
-    <div class="warrior ai"></div>
-    <div class="warrior dw"></div>
-    <div class="warrior lv"></div>
-    <div class="warrior clark"></div>
-    <div class="warrior mcgee"></div>
-  </div>
+  <main>
+    <div class="warriors">
+      <div class="warrior sc"></div>
+      <div class="warrior kd"></div>
+      <div class="warrior klay"></div>
+      <div class="warrior green"></div>
+      <div class="warrior zaza"></div>
+      <div class="warrior ai"></div>
+      <div class="warrior dw"></div>
+      <div class="warrior lv"></div>
+      <div class="warrior clark"></div>
+      <div class="warrior mcgee"></div>
+    </div>
+  </main>
   <script>
-  (function() {
-    var warriors = document.querySelectorAll('.warrior');
-    var degree = 360 / warriors.length;
-    warriors.forEach(function(warrior, index) {
-      warrior.style.transform = 'rotateY(' + degree * index + 'deg) translateZ(380px)';
-    });
-    window.onload = function() {
-      document.querySelector('.warriors').classList.add('animate'); 
-    };
-  })();
+    (function () {
+      var warriors = document.querySelectorAll('.warrior');
+      var degree = 360 / warriors.length;
+      warriors.forEach(function (warrior, index) {
+        warrior.style.transform = 'rotateY(' + degree * index + 'deg) translateZ(380px)';
+      });
+      window.onload = function () {
+        document.querySelector('.warriors').classList.add('animate');
+      };
+    })();
   </script>
 </body>
+
 </html>
