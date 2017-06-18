@@ -3,16 +3,16 @@ html, body {
 }
 
 body {
-  margin: 0;
-  
+  margin: 0; 
 }
 
 main {
   height: 100%;
   display: flex;
-  perspective: 1200px;
+  perspective: 1000px;
+  align-items: center;
   justify-content: center;
-  perspective-origin: center -2%;
+  perspective-origin: center 300px;
 }
 
 .background {
@@ -73,7 +73,6 @@ _::-webkit-full-page-media, _:future, :root .video {
   width: 200px;
   height: 200px;
   cursor: pointer;
-  margin-top: 12em;
   position: relative;
   transform-style: preserve-3d;
 }
