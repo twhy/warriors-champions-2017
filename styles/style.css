@@ -10,9 +10,9 @@ body {
 main {
   height: 100%;
   display: flex;
-  perspective: 1000px;
-  align-items: center;
+  perspective: 1200px;
   justify-content: center;
+  perspective-origin: center -2%;
 }
 
 .background {
@@ -73,6 +73,7 @@ _::-webkit-full-page-media, _:future, :root .video {
   width: 200px;
   height: 200px;
   cursor: pointer;
+  margin-top: 12em;
   position: relative;
   transform-style: preserve-3d;
 }
