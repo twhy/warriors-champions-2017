@@ -94,7 +94,6 @@ _::-webkit-full-page-media, _:future, :root .video {
   border-radius: 4px;
   background-size: contain;
   background-repeat: no-repeat;
-  transform: rotateY(0) rotateX(0);
 }
 
 .warrior.sc {
