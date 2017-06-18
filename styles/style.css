@@ -4,12 +4,13 @@ html, body {
 
 body {
   margin: 0;
-  perspective: 1000px;
+  
 }
 
 main {
   height: 100%;
   display: flex;
+  perspective: 1000px;
   align-items: center;
   justify-content: center;
 }
@@ -29,6 +30,7 @@ main {
 
 /* https://stackoverflow.com/questions/16348489/is-there-a-css-hack-for-safari-only-not-chrome */
 _::-webkit-full-page-media, _:future, :root .video {
+  width: 100%;
   height: 100%;
 }
 
@@ -37,10 +39,10 @@ _::-webkit-full-page-media, _:future, :root .video {
   left: 50%;
   opacity: .9;
   z-index: 999;
-  width: 420px;
-  height: 420px;
+  width: 410px;
+  height: 410px;
   position: absolute;
-  transform: translate3d(-50%, -50%, 500px) scale(.5); /* Fix rendering issue in Safari */
+  transform: translate(-50%, -50%);
   background: url('../images/logo.svg') no-repeat center center;
 }
 
