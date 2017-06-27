@@ -1,9 +1,10 @@
-html, body {
+html,
+body {
   height: 100%;
 }
 
 body {
-  margin: 0; 
+  margin: 0;
 }
 
 main {
@@ -28,8 +29,12 @@ main {
   object-fit: fill;
 }
 
+
 /* https://stackoverflow.com/questions/16348489/is-there-a-css-hack-for-safari-only-not-chrome */
-_::-webkit-full-page-media, _:future, :root .video {
+
+_::-webkit-full-page-media,
+_:future,
+ :root .video {
   width: 100%;
   height: 100%;
 }
@@ -98,40 +103,50 @@ _::-webkit-full-page-media, _:future, :root .video {
 
 .warrior.sc {
   background-image: url(../images/sc.jpeg);
+  transform: rotateY(0) translateZ(380px);
 }
 
 .warrior.kd {
   background-image: url(../images/kd.jpeg);
+  transform: rotateY(36deg) translateZ(380px);
 }
 
 .warrior.ai {
   background-image: url(../images/ai.jpeg);
+  transform: rotateY(72deg) translateZ(380px);
 }
 
 .warrior.lv {
   background-image: url(../images/lv.jpeg);
+  transform: rotateY(108deg) translateZ(380px);
 }
 
 .warrior.dw {
   background-image: url(../images/dw.jpeg);
+  transform: rotateY(144deg) translateZ(380px);
 }
 
 .warrior.klay {
   background-image: url(../images/klay.jpeg);
+  transform: rotateY(180deg) translateZ(380px);
 }
 
 .warrior.zaza {
   background-image: url(../images/zaza.jpeg);
+  transform: rotateY(216deg) translateZ(380px);
 }
 
 .warrior.green {
   background-image: url(../images/green.jpeg);
+  transform: rotateY(252deg) translateZ(380px);
 }
 
 .warrior.clark {
   background-image: url(../images/clark.jpeg);
+  transform: rotateY(288deg) translateZ(380px);
 }
 
 .warrior.mcgee {
   background-image: url(../images/mcgee.jpeg);
+  transform: rotateY(324deg) translateZ(380px);
 }
